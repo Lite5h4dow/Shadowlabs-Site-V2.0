@@ -16,7 +16,6 @@
   padding: 5px;
 }
 #headerIMG{
-  align: left;
   padding-bottom: 10px;
 }
 #divider_grid{
@@ -28,10 +27,17 @@
 }
 #divider_header{
   display: table-cell;
-  align: left;
   font-size: 5vw;
   vertical-align: middle;
   font-family: 'Exo 2', sans-serif;
+}
+/*semantic ui class CSS*/
+.ui.inverted.icon.header{
+  font-family: 'Exo 2',sans-serif;
+}
+/*ShadowLabs class CSS*/
+.sl.body{
+  color: rgb(255,255,255);
 }
 .sl.divider{
   position: relative;
@@ -61,7 +67,7 @@
   float: right;
 }
 .sl.container{
-  background: rgba(0,200,200,0.8);
+  background-image: url(../images/backgrounds/polygonal01.jpg);
 }
 .sl.container .ui.container{
   background: rgba(0,0,0,0.5);
