@@ -27,7 +27,7 @@
 }
 #divider_header{
   display: table-cell;
-  font-size: 5vw;
+  font-size: 3.5vw;
   vertical-align: middle;
   font-family: 'Exo 2', sans-serif;
 }
@@ -50,9 +50,9 @@
 .sl.divider.content{
   position: absolute;
   top: 33.3%;
-  height: 33.3%;
+  height: 30%;
   left: 10%;
-  width: 60vw;
+  width: 40vw;
 
 }
 .sl.divider.content span{
