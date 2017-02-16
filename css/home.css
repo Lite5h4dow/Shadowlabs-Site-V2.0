@@ -44,6 +44,7 @@
   width: 100vw;
 }
 .sl.divider img{
+  padding: 0px;
   width: 100%;
   z-index: -1;
 }
