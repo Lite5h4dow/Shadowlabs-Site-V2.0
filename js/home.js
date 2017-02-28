@@ -12,4 +12,7 @@ $(document).ready(function(){
   $('.ui.sticky').sticky({
     context: '#page'
   });
+  $('#sidebar-toggle').click(function(){
+    $('.ui.sidebar').sidebar('toggle');
+  });
 });

@@ -16,37 +16,43 @@
   <script src="js/home.js"></script>
 </head>
 <body>
-  <div class="ui sticky">
-    <div class="ui teal secondary pointing inverted menu" id="mainMenu">
-      <a class="active item" herf="home.html">Home</a>
-      <a class="item" href="404.html">Games Development</a>
-      <a class="item" href="404.html">Web Development</a>
-      <a class="item" href="404.html">Graphic Design</a>
-      <a class="browse item" id="modsDD">Mods
-        <i class="dropdown icon"></i>
-      </a>
-      <div class="ui inverted popup" id="modDD+">
-        <div class="ui two column center aligned divided grid">
-          <div class="column">
-            <h4 class="ui header">League of Legends</h4>
-            <div class="ui link list">
-              <a class="item">Custom Skins</a>
-              <a class="item">HD Remakes</a>
-            </div>
+  <div class="ui sidebar teal secondary vertical pointing inverted menu" id="mainMenu">
+    <a class="active item" herf="home.html">Home</a>
+    <a class="item" href="404.html">Games Development</a>
+    <a class="item" href="404.html">Web Development</a>
+    <a class="item" href="404.html">Graphic Design</a>
+    <a class="browse item" id="modsDD">Mods
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui inverted popup" id="modDD+">
+      <div class="ui two column center aligned divided grid">
+        <div class="column">
+          <h4 class="ui header">League of Legends</h4>
+          <div class="ui link list">
+            <a class="item">Custom Skins</a>
+            <a class="item">HD Remakes</a>
           </div>
-          <div class="column">
-            <h4 class="ui header">Games</h4>
-            <div class="ui link list">
-              <a class="item">Fallout</a>
-              <a class="item">Skyrim</a>
-              <a class="item">Others</a>
-            </div>
+        </div>
+        <div class="column">
+          <h4 class="ui header">Games</h4>
+          <div class="ui link list">
+            <a class="item">Fallout</a>
+            <a class="item">Skyrim</a>
+            <a class="item">Others</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="page">
+  <div class="pusher">
+    <div class="ui sticky">
+      <div class="ui circular button" id="sidebar-toggle">
+        <i class="content icon"></i>
+      </div>
+    </div>
+    <div id="page">
+
+    </div>
   </div>
 </body>
 </html>
