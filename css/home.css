@@ -2,61 +2,20 @@
   background: rgba(0,0,0,0.75);
 }
 #header-logo{
-  max-height: 4vh;
+  max-height: 2vw;
 }
-#ekkoBanner{
-  /*Saturation hover*/
-  -webkit-transition:all .4s;
-  -moz-transition:all .4s;
-  -ms-transition:all .4s;
-  -o-transition:all .4s;
-  transition:all .4s;
+#page{
+  background: rgb(40,40,40);
 }
-#ekkoBanner:not(:hover) {
-  -webkit-filter:grayscale(100%);
-  -moz-filter:greyscale(100%);
-  -ms-filter:greyscale(100%);
-  -o-filter:greyscale(100%);
-  filter:grayscale(100%);
+.grow{
+  transition: all .2s ease-in-out;
 }
-#ekkoBanner:hover {
-  -webkit-filter:greyscale(90%);
-  -moz-filter:greyscale(90%);
-  -ms-filter:greyscale(90%);
-  -o-filter:greyscale(90%);
-  filter:greyscale(90%);
+.grow:hover{
+  transform: scale(1.05);
 }
-#webBanner{
-  position: relative;
-  /*Saturation hover*/
-  -webkit-transition:all .4s;
-  -moz-transition:all .4s;
-  -ms-transition:all .4s;
-  -o-transition:all .4s;
-  transition:all .4s;
+.banner{
+  background: rgba(0,0,0,0.4);
 }
-#webBanner:not(:hover) {
-  -webkit-filter:grayscale(100%);
-  -moz-filter:greyscale(100%);
-  -ms-filter:greyscale(100%);
-  -o-filter:greyscale(100%);
-  filter:grayscale(100%);
-}
-#webBanner:hover {
-  -webkit-filter:greyscale(90%);
-  -moz-filter:greyscale(90%);
-  -ms-filter:greyscale(90%);
-  -o-filter:greyscale(90%);
-  filter:greyscale(90%);
-}
-#GDlearnmore{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#GDHeader{
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.padder{
+  padding: 2%;
 }
