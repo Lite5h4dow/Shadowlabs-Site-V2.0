@@ -1,12 +1,62 @@
 #mainMenu{
   background: rgba(0,0,0,0.75);
 }
-#slider-toggle{
-  padding-top: 10px;
-  padding-left: 10px;
-}
 #header-logo{
-  max-height: 6vh;
-  padding-left: 38vw;
-  padding-right: 38vw;
+  max-height: 4vh;
+}
+#ekkoBanner{
+  /*Saturation hover*/
+  -webkit-transition:all .4s;
+  -moz-transition:all .4s;
+  -ms-transition:all .4s;
+  -o-transition:all .4s;
+  transition:all .4s;
+}
+#ekkoBanner:not(:hover) {
+  -webkit-filter:grayscale(100%);
+  -moz-filter:greyscale(100%);
+  -ms-filter:greyscale(100%);
+  -o-filter:greyscale(100%);
+  filter:grayscale(100%);
+}
+#ekkoBanner:hover {
+  -webkit-filter:greyscale(90%);
+  -moz-filter:greyscale(90%);
+  -ms-filter:greyscale(90%);
+  -o-filter:greyscale(90%);
+  filter:greyscale(90%);
+}
+#webBanner{
+  position: relative;
+  /*Saturation hover*/
+  -webkit-transition:all .4s;
+  -moz-transition:all .4s;
+  -ms-transition:all .4s;
+  -o-transition:all .4s;
+  transition:all .4s;
+}
+#webBanner:not(:hover) {
+  -webkit-filter:grayscale(100%);
+  -moz-filter:greyscale(100%);
+  -ms-filter:greyscale(100%);
+  -o-filter:greyscale(100%);
+  filter:grayscale(100%);
+}
+#webBanner:hover {
+  -webkit-filter:greyscale(90%);
+  -moz-filter:greyscale(90%);
+  -ms-filter:greyscale(90%);
+  -o-filter:greyscale(90%);
+  filter:greyscale(90%);
+}
+#GDlearnmore{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#GDHeader{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

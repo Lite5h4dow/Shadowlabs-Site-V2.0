@@ -15,4 +15,21 @@ $(document).ready(function(){
   $('#sidebar-toggle').click(function(){
     $('.ui.sidebar').sidebar('toggle');
   });
+  $('#contact-button').click(function(){
+    $('#contact-modal').modal({
+      transition : 'fade right',
+      autofocus  : 'true',
+    }).modal('show');
+  });
+  $('#sidebar-toggle').popup({
+    on: 'hover',
+    transition: 'drop',
+    position: 'right center'
+  });
+  $('#contact-button').popup({
+    on: 'hover',
+    transition: 'drop',
+    position: 'left center'
+  });
+  $('.zoo-item').ZooMove();
 });

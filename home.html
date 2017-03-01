@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="css\home.css" rel="stylesheet" />
+  <link href="css\contact.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- ZooMove-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>
   <!--Semantic import-->
   <script src="assets/semantic/semantic.min.js"></script>
   <link href="assets/semantic/semantic.min.css" rel="stylesheet" />
@@ -24,8 +28,8 @@
     <a class="browse item" id="modsDD">Mods
       <i class="dropdown icon"></i>
     </a>
-    <div class="ui inverted popup" id="modDD+">
-      <div class="ui two column center aligned divided grid">
+    <div class="ui popup" id="modDD+">
+      <div class="ui two column center aligned divided inverted grid">
         <div class="column">
           <h4 class="ui header">League of Legends</h4>
           <div class="ui link list">
@@ -46,22 +50,119 @@
   </div>
   <div class="pusher">
     <div class="ui sticky">
-      <div class="ui teal inverted secondary pointing menu">
-        <div class="item">
-          <div class="ui basic icon circular inverted button" id="sidebar-toggle">
-            <i class="content icon"></i>
-          </div>
-        </div>
-        <img id="header-logo" src="images\Shadow_Labs_White-01.png" />
-        <div class="right item">
-          <div class="ui basic icon circular inverted button">
-            <i class="talk outline icon"></i>
+      <div class="ui basic inverted teal segment">
+        <div class="ui centered grid">
+          <div class="row">
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted button" id="sidebar-toggle" data-content="Sidebar" data-variation="inverted">
+                <i class="content icon"></i>
+              </div>
+            </div>
+            <div class="twelve wide column">
+              <img id="header-logo" src="images\Shadow_Labs_White-01.png" />
+            </div>
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted button" id="contact-button" data-content="Contact Me" data-variation="inverted">
+                <i class="talk outline icon"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div id="page">
-
+      <div id="GDBanner">
+        <div>
+          <div class="ui stackable grid">
+            <div class="row">
+              <div class="ten wide column">
+                <img class="ui fluid image" src="images\league\ekko banner.png" id="ekkoBanner"/>
+              </div>
+              <div class="three wide column" id="GDHeader">
+                <div class="ui huge header">
+                  Games Development
+                </div>
+              </div>
+              <div class="three wide column" id="GDlearnmore">
+                <div class="ui huge labeled button">
+                  <div class="ui basic teal button">
+                    <h3>Find Out More</h3>
+                  </div>
+                  <a class="ui teal left pointing label">
+                    <i class="angle double right icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="ui stackable grid">
+            <div class="row">
+              <div class="three wide column" id="GDHeader">
+                <div class="ui huge header">
+                  Web Development
+                </div>
+              </div>
+              <div class="three wide column" id="GDlearnmore">
+                <div class="ui huge labeled button">
+                  <div class="ui basic teal button">
+                    <h3>Find Out More</h3>
+                  </div>
+                  <a class="ui teal left pointing label">
+                    <i class="angle double right icon"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="ten wide column">
+                <img class="ui fluid image" src="images\main\web-dev.png" id="webBanner"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modals-->
+  <div class="ui modal" id="contact-modal">
+    <i class="teal close icon"></i>
+    <div class="header">
+      Contact Me!
+    </div>
+    <div class="content">
+      <form class="ui form">
+        <div class="field">
+          <label>Name</label>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="first-name" placeholder="First Name" />
+          </div>
+          <div class="field">
+            <input type="text" name="last-name" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="field">
+          <label>E-mail Address</label>
+          <input type="text" name="e-mail" placeholder="E-mail Address" />
+        </div>
+        <div class="field">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea></textarea>
+        </div>
+        <button class="ui fluid teal animated fade button">
+          <div class="visible content">
+            Submit
+          </div>
+          <div class="hidden content">
+            <i class="send icon"></i>
+          </div>
+        </button>
+      </form>
     </div>
   </div>
 </body>
