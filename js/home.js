@@ -31,5 +31,4 @@ $(document).ready(function(){
     transition: 'drop',
     position: 'left center'
   });
-  $('.zoo-item').ZooMove();
 });
