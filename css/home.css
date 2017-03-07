@@ -1,76 +1,83 @@
 #mainMenu{
   background: rgba(0,0,0,0.75);
 }
-#mainMenu img{
-  padding: 0px;
+#header-logo{
+  max-height: 2vw;
 }
-#page .container .segment{
-  padding-top: 20px;
+#page{
+  background: rgb(40,40,40);
 }
-#page h1{
-  font-family: 'Exo 2', sans-serif;
-  color: white;
+.grow{
+  transition: all .2s ease-in-out;
 }
-#page h1 span {
-  background: rgba(0,0,0,0.8);
-  padding: 5px;
+.grow:hover{
+  transform: scale(1.05);
 }
-#headerIMG{
-  padding-bottom: 10px;
+.banner{
+  background: rgba(0,0,0,0.4);
 }
-#divider_grid{
-  background: rgba(200,200,200,0.5);
+.padder{
+  padding: 2%;
 }
-#divider_header_column{
-  display: table;
-  height: 100%;
-}
-#divider_header{
-  display: table-cell;
-  font-size: 3.5vw;
-  vertical-align: middle;
-  font-family: 'Exo 2', sans-serif;
-}
-/*semantic ui class CSS*/
-.ui.inverted.icon.header{
-  font-family: 'Exo 2',sans-serif;
-}
-/*ShadowLabs class CSS*/
-.sl.body{
+.slogan{
   color: rgb(255,255,255);
+  font-family: 'Exo 2',sans-serif;
+  font-size: 3vw;
 }
-.sl.divider{
-  position: relative;
-  width: 100vw;
+.impact.container{
+  display: flex;
+  flex-direction: row;
 }
-.sl.divider img{
-  padding: 0px;
-  width: 100%;
-  z-index: -1;
+.impact.left{
+  order: 1;
+  flex-grow: 1;
+  flex-basis: auto;
+  min-width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-.sl.divider.content{
-  position: absolute;
-  top: 33.3%;
-  height: 30%;
-  left: 10%;
-  width: 40vw;
-
+.impact.left p{
+  color: rgb(255,255,255);
+  padding-top: 5px;
+  text-align: center;
+  font-size: 17px;
 }
-.sl.divider.content span{
-  background: rgba(255,255,255,0.5)
+.impact.right p{
+  color: rgb(255,255,255);
+  padding-top: 5px;
+  text-align: center;
+  font-size: 17px;
 }
-.sl.logo{
-  float: left;
-  height: 100%;
-  width: 32%;
+.impact.right{
+  order: 2;
+  flex-grow: 1;
+  flex-basis: auto;
+  min-width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-.sl.divider.header{
-  float: right;
+.impact.left .header{
+  padding-top: 10px;
 }
-.sl.container{
-  background-image: url(../images/backgrounds/polygonal01.jpg);
+.impact.right .header{
+  padding-top: 10px;
 }
-.sl.container .ui.container{
-  background: rgba(0,0,0,0.5);
-  padding-top: 15px;
+.anchored{
+  top: -100px;
+}
+.sepia {
+  filter: none;
+  -webkit-filter: blur(1px);
+  -moz-filter:    blur(1px);
+  -ms-filter:     blur(1px);
+  -o-filter:      blur(1px);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.sepia:hover {
+  filter: none;
+  -webkit-filter: blur(0px);
+  -moz-filter:    blur(0px);
+  -ms-filter:     blur(0px);
+  -o-filter:      blur(0px);
 }

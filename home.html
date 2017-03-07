@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="css\home.css" rel="stylesheet" />
+  <link href="css\hexagons.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!--Semantic import-->
   <script src="assets/semantic/semantic.min.js"></script>
@@ -14,124 +15,292 @@
   <link href="https://fonts.googleapis.com/css?family=Exo+2|Ubuntu" rel="stylesheet">
   <!-- Javascript -->
   <script src="js/home.js"></script>
+  <script src="js/contact.js"></script>
+  <!--Recaptcha-->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-  <div class="ui sticky">
-    <div class="ui teal secondary pointing inverted menu" id="mainMenu">
-      <a class="active item" herf="home.html">Home</a>
-      <a class="item" href="404.html">Games Development</a>
-      <a class="item" href="404.html">Web Development</a>
-      <a class="item" href="404.html">Graphic Design</a>
-      <a class="browse item" id="modsDD">Mods
-        <i class="dropdown icon"></i>
-      </a>
-      <div class="ui inverted popup" id="modDD+">
-        <div class="ui two column center aligned divided grid">
-          <div class="column">
-            <h4 class="ui header">League of Legends</h4>
-            <div class="ui link list">
-              <a class="item">Custom Skins</a>
-              <a class="item">HD Remakes</a>
-            </div>
+  <div class="ui sidebar vertical inverted borderless menu" id="mainMenu">
+    <a class="active item" herf="home.html">Home</a>
+    <a class="item" href="404.html">Games Development</a>
+    <a class="item" href="404.html">Web Development</a>
+    <a class="item" href="404.html">Graphic Design</a>
+    <a class="browse item" id="modsDD">Mods
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup" id="modDD+">
+      <div class="ui two column center aligned divided inverted grid">
+        <div class="column">
+          <h4 class="ui header">League of Legends</h4>
+          <div class="ui link list">
+            <a class="item">Custom Skins</a>
+            <a class="item">HD Remakes</a>
           </div>
-          <div class="column">
-            <h4 class="ui header">Games</h4>
-            <div class="ui link list">
-              <a class="item">Fallout</a>
-              <a class="item">Skyrim</a>
-              <a class="item">Others</a>
-            </div>
+        </div>
+        <div class="column">
+          <h4 class="ui header">Games</h4>
+          <div class="ui link list">
+            <a class="item">Fallout</a>
+            <a class="item">Skyrim</a>
+            <a class="item">Others</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="page">
-    <div class="ui container">
-      <div class="ui basic segment">
-        <img class="ui fluid image" src="images/ShadowLabs.png" id="headerIMG" />
-        <center><h1 class="ui header"><span>Developer To The Core</span></h1></center>
-      </div>
-    </div>
-    <div class="sl divider">
-      <img src="images/league/ashe.jpg" />
-      <div class="sl divider content">
-        <div class="ui grid" id="divider_grid">
+  <div class="pusher">
+    <div class="ui sticky">
+      <div class="ui basic inverted teal segment">
+        <div class="ui centered grid">
           <div class="row">
-            <div class="six wide column">
-              <div class="ui fluid logo">
-                <img src="images/main/logo.png"/>
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted grow button" id="sidebar-toggle" data-content="Sidebar" data-variation="inverted">
+                <i class="content icon"></i>
               </div>
             </div>
-            <div class="ten wide column" id="divider_header_column">
-              <h2 class="ui header" id="divider_header">Skin <br /> Development</h2>
+            <div class="twelve wide column">
+              <img id="header-logo" href="home.html" class="grow" src="images\Shadow_Labs_White-01.png" />
+            </div>
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted grow button" id="contact-button" data-content="Contact Me" data-variation="inverted">
+                <i class="talk outline icon"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="sl container">
+    <div id="page">
       <div class="ui container">
         <div class="ui basic segment">
-          <div class="ui stackable centered divided grid">
-            <div class="row">
-              <div class="four wide column">
-                <h3 class="ui inverted icon header">
-                  <i class="ui cube icon"></i>
-                  Remodeling
-                </h3>
+          <center>
+            <h1 class="slogan grow">Beauty in Efficiency</h1>
+          </center>
+        </div>
+        <div class="padder">
+          <ul id="hexGrid">
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#gamesDev">
+                  <img src="images\hexagons\Games Dev.png" />
+                  <h1>Games Development</h1>
+                </a>
               </div>
-              <div class="four wide column">
-                <h3 class="ui inverted icon header">
-                  <i class="ui paint brush icon"></i>
-                  Texturing
-                </h3>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#webDev">
+                  <img src="images\hexagons\Web Dev.png" />
+                  <h1>Web Development</h1>
+                </a>
               </div>
-              <div class="four wide column">
-                <h3 class="ui inverted icon header">
-                  <i class="ui wizard icon"></i>
-                  Particle Effects
-                </h3>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#graphicDesign">
+                  <img src="images\hexagons\Design.png" />
+                  <h1>Graphic Design</h1>
+                </a>
               </div>
-              <div class="four wide column">
-                <h3 class="ui inverted icon header">
-                  <i class="ui video play icon"></i>
-                  Animations
-                </h3>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#videography">
+                  <img src="images\hexagons\Vid.png" />
+                  <h1>Videography</h1>
+                </a>
               </div>
-            </div>
-            <div class="row">
-              <div class="six wide column">
-                <div class="ui huge labeled button" tabindex="0">
-                  <div class="ui teal button">
-                    <i class="ui large plus square icon"></i>
-                  </div>
-                  <div class="ui basic teal left pointing label">
-                    Learn More
-                  </div>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#modding">
+                  <img src="images\hexagons\Games Dev.png" />
+                  <h1>Modding</h1>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ui basic segment">
+        <div class="impact container" id="gamesDev">
+          <div class="impact left">
+            <center>
+              <h1 class="ui teal header">
+                <i class="teal circular cube icon"></i>
+                <div class="content">
+                  Games Development
                 </div>
+              </h1>
+            </center>
+            <p>
+              Ive been studying games develeopment for 3 years focusing on 3D modeling and texturing
+            </p>
+            <div class="ui fade animated teal fluid button">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
               </div>
             </div>
+          </div>
+          <div class="impact right">
+            <img class="ui fluid image sepia" src="images\league\katarina.jpg" />
+          </div>
+        </div>
+        <div class="impact container" id="webDev">
+          <div class="impact right">
+            <center>
+              <h1 class="ui teal header">
+                <i class="teal circular cube icon"></i>
+                <div class="content">
+                  Games Development
+                </div>
+              </h1>
+            </center>
+            <p>
+              Ive been studying games develeopment for 3 years focusing on 3D modeling and texturing
+            </p>
+            <div class="ui fade animated teal fluid button">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="impact left">
+            <img class="ui fluid image sepia" src="images\league\katarina.jpg" />
+          </div>
+        </div>
+        <div class="impact container" id="graphicDesign">
+          <div class="impact left">
+            <center>
+              <h1 class="ui teal header">
+                <i class="teal circular cube icon"></i>
+                <div class="content">
+                  Games Development
+                </div>
+              </h1>
+            </center>
+            <p>
+              Ive been studying games develeopment for 3 years focusing on 3D modeling and texturing
+            </p>
+            <div class="ui fade animated teal fluid button">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="impact right">
+            <img class="ui fluid image sepia" src="images\league\katarina.jpg" />
+          </div>
+        </div>
+        <div class="impact container" id="videography">
+          <div class="impact right">
+            <center>
+              <h1 class="ui teal header">
+                <i class="teal circular cube icon"></i>
+                <div class="content">
+                  Games Development
+                </div>
+              </h1>
+            </center>
+            <p>
+              Ive been studying games develeopment for 3 years focusing on 3D modeling and texturing
+            </p>
+            <div class="ui fade animated teal fluid button">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="impact left">
+            <img class="ui fluid image sepia" src="images\league\katarina.jpg" />
+          </div>
+        </div>
+        <div class="impact container" id="modding">
+          <div class="impact left">
+            <center>
+              <h1 class="ui teal header">
+                <i class="teal circular cube icon"></i>
+                <div class="content">
+                  Games Development
+                </div>
+              </h1>
+            </center>
+            <p>
+              Ive been studying games develeopment for 3 years focusing on 3D modeling and texturing
+            </p>
+            <div class="ui fade animated teal fluid button">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="impact right">
+            <img class="ui fluid image sepia" src="images\league\katarina.jpg" />
           </div>
         </div>
       </div>
     </div>
-    <div class="sl divider">
-      <img src="images/main/web-dev.png" />
-      <div class="sl divider content">
-        <div class="ui grid" id="divider_grid">
-          <div class="row">
-            <div class="six wide column">
-              <div class="ui fluid logo">
-                <img src="images/main/logo.png"/>
-              </div>
+  </div>
+  <div class="ui modal" id="contact-modal">
+    <i class="teal close icon"></i>
+    <div class="header">
+      Contact Me
+    </div>
+    <div class="content">
+      <form class="ui form" action="php/contact_form.php" method="post">
+        <div class="required field">
+          <label>Name</label>
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="firstName" placeholder="First Name" />
             </div>
-            <div class="ten wide column" id="divider_header_column">
-              <h2 class="ui header" id="divider_header">Web <br /> Development</h2>
+            <div class="field">
+              <input type="text" name="lastName" placeholder="Last Name" />
             </div>
           </div>
         </div>
-      </div>
+        <div class="required field">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="E-Mail Address"/>
+        </div>
+        <div class="required field">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+        <div class="required field">
+          <label>Message</label>
+          <textarea name="body"></textarea>
+        </div>
+        <button class="ui basic fluid teal animated fade button">
+          <div class="visible content">
+            <i class="send icon"></i>
+          </div>
+          <div class="hidden content">
+            Send
+          </div>
+        </button>
+        <div class="ui error message">
+        </div>
+        <div class="ui success message">
+          <div class="header">Message Sent ^^</div>
+          <p>Message on its way, you should hear from me soon</p>
+        </div>
+      </form>
     </div>
   </div>
 </body>
