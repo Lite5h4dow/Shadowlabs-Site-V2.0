@@ -24,3 +24,60 @@
   font-family: 'Exo 2',sans-serif;
   font-size: 3vw;
 }
+.impact.container{
+  display: flex;
+  flex-direction: row;
+}
+.impact.left{
+  order: 1;
+  flex-grow: 1;
+  flex-basis: auto;
+  min-width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.impact.left p{
+  color: rgb(255,255,255);
+  padding-top: 5px;
+  text-align: center;
+  font-size: 17px;
+}
+.impact.right p{
+  color: rgb(255,255,255);
+  padding-top: 5px;
+  text-align: center;
+  font-size: 17px;
+}
+.impact.right{
+  order: 2;
+  flex-grow: 1;
+  flex-basis: auto;
+  min-width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.impact.left .header{
+  padding-top: 10px;
+}
+.impact.right .header{
+  padding-top: 10px;
+}
+.anchored{
+  top: -100px;
+}
+.sepia {
+  filter: none;
+  -webkit-filter: blur(1px);
+  -moz-filter:    blur(1px);
+  -ms-filter:     blur(1px);
+  -o-filter:      blur(1px);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.sepia:hover {
+  filter: none;
+  -webkit-filter: blur(0px);
+  -moz-filter:    blur(0px);
+  -ms-filter:     blur(0px);
+  -o-filter:      blur(0px);
+}
