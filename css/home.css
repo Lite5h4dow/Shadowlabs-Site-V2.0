@@ -29,6 +29,7 @@
   flex-direction: row;
 }
 .impact.left{
+  padding:0 auto;
   order: 1;
   flex-grow: 1;
   flex-basis: auto;
