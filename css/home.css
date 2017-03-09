@@ -62,6 +62,10 @@
 .impact.right .header{
   padding-top: 20px;
 }
+.impact.left img{
+  border-width: 1px;
+  border-color: white;
+}
 .anchored{
   top: -100px;
 }
