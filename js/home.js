@@ -21,6 +21,12 @@ $(document).ready(function(){
       autofocus  : 'true',
     }).modal('show');
   });
+  $('#contact-footer').click(function(){
+    $('#contact-modal').modal({
+      transition : 'fade right',
+      autofocus  : 'true',
+    }).modal('show');
+  });
   $('#sidebar-toggle').popup({
     on: 'hover',
     transition: 'drop',
