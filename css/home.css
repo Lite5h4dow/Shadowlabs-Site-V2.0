@@ -2,6 +2,7 @@
   background: rgba(0,0,0,0.75);
 }
 #header-logo{
+  min-height: 50px;
   max-height: 2vw;
 }
 #page{
@@ -22,50 +23,7 @@
 .slogan{
   color: rgb(255,255,255);
   font-family: 'Exo 2',sans-serif;
-  font-size: 3vw;
-}
-.impact.container{
-  display: flex;
-  flex-direction: row;
-}
-.impact.left{
-  padding:0 auto;
-  order: 1;
-  flex-grow: 1;
-  flex-basis: auto;
-  min-width: 50%;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.impact.left p{
-  color: rgb(255,255,255);
-  padding-top: 5px;
-  text-align: center;
-  font-size: 17px;
-}
-.impact.right p{
-  color: rgb(255,255,255);
-  padding-top: 5px;
-  text-align: center;
-  font-size: 17px;
-}
-.impact.right{
-  order: 2;
-  flex-grow: 1;
-  flex-basis: auto;
-  min-width: 50%;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.impact.left .header{
-  padding-top: 20px;
-}
-.impact.right .header{
-  padding-top: 20px;
-}
-.impact.left img{
-  border-width: 1px;
-  border-color: white;
+  font-size: 30px;
 }
 .anchored{
   top: -100px;
@@ -85,4 +43,7 @@
   -moz-filter:    blur(0px);
   -ms-filter:     blur(0px);
   -o-filter:      blur(0px);
+}
+.paragraph {
+  font-size: 18px;
 }

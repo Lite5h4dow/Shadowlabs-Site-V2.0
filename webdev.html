@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shadowlabs | Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="css\home.css" rel="stylesheet" />
+  <link href="css\hexagons.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!--Semantic import-->
+  <script src="assets/semantic/semantic.min.js"></script>
+  <link href="assets/semantic/semantic.min.css" rel="stylesheet" />
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2|Ubuntu" rel="stylesheet">
+  <!-- Javascript -->
+  <script src="js/home.js"></script>
+  <script src="js/contact.js"></script>
+  <!--Recaptcha-->
+  <script
+
+
+
+   src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+  <div class="ui sidebar vertical inverted menu" id="mainMenu">
+    <a class="item" href="home.html">Home</a>
+    <a class="item" href="404.html">Portfolio</a>
+    <a class="item" href="404.html">Games Development</a>
+    <a class="active item" href="webdev.html">Web Development</a>
+    <a class="item" href="404.html">Graphic Design</a>
+    <a class="browse item" id="modsDD">Mods
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup" id="modDD+">
+      <div class="ui two column center aligned divided inverted grid">
+        <div class="column">
+          <h4 class="ui header">League of Legends</h4>
+          <div class="ui link list">
+            <a class="item">Custom Skins</a>
+            <a class="item">HD Remakes</a>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="ui header">Games</h4>
+          <div class="ui link list">
+            <a class="item">Fallout</a>
+            <a class="item">Skyrim</a>
+            <a class="item">Others</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pusher">
+    <!--Header-->
+    <div class="ui sticky">
+      <div class="ui basic inverted teal segment">
+        <div class="ui centered grid">
+          <div class="row">
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted grow button" id="sidebar-toggle" data-content="Sidebar" data-variation="inverted">
+                <i class="content icon"></i>
+              </div>
+            </div>
+            <div class="twelve wide column">
+              <img id="header-logo" href="home.html" class="grow" src="images\Shadow_Labs_White-01.png" />
+            </div>
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted grow button" id="contact-button" data-content="Contact Me" data-variation="inverted">
+                <i class="address book outline icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page">
+      <!--Page-->
+
+      <!--Footer-->
+      <div class="footer">
+        <div class="ui basic inverted equal width stackable centered grid segment">
+          <div class="column">
+            <div class="ui inverted header">
+              Stay Connected
+            </div>
+            <div class="ui icon buttons">
+              <div class="ui blue button">
+                <i class="facebook icon"></i>
+              </div>
+              <div class="ui teal button">
+                <i class="twitter icon"></i>
+              </div>
+              <div class="ui red button">
+                <i class="youtube icon"></i>
+              </div>
+              <div class="ui purple button">
+                <i class="instagram icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui inverted header">
+              Developer To the Core
+            </div>
+            <p>
+              Ive been making things for years, now I make things on a computer.
+              Religeously. Support me on Paetreon to keep up to date on all my
+              new projects.
+            </p>
+            <div class="ui fluid orange animated button">
+              <div class="visible content">
+                Paetreon
+              </div>
+              <div class="hidden content">
+                <i class="product hunt icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui inverted header">
+              Nav Panel
+            </div>
+            <div class="ui horizontal divided inverted list">
+              <a class="item" href="home.html">
+                <i class="home icon"></i>
+                <div class="content">
+                  Home
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="image icon"></i>
+                <div class="content">
+                  Portfolio
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="game icon"></i>
+                <div class="content">
+                  Games Development
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="html5 icon"></i>
+                <div class="content">
+                  Website Development
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="paint brush icon"></i>
+                <div class="content">
+                  Graphic Design
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="film icon"></i>
+                <div class="content">
+                  Videography
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="plus icon"></i>
+                <div class="content">
+                  Game Mods
+                </div>
+              </a>
+              <a class="item" id="contact-footer">
+                <i class="address book outline icon"></i>
+                <div class="content">
+                  Contact Me
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui modal" id="contact-modal">
+    <i class="teal close icon"></i>
+    <div class="header">
+      Contact Me
+    </div>
+    <div class="content">
+      <form class="ui form" action="php/contact_form.php" method="post">
+        <div class="required field">
+          <label>Name</label>
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="firstName" placeholder="First Name" />
+            </div>
+            <div class="field">
+              <input type="text" name="lastName" placeholder="Last Name" />
+            </div>
+          </div>
+        </div>
+        <div class="required field">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="E-Mail Address"/>
+        </div>
+        <div class="required field">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+        <div class="required field">
+          <label>Message</label>
+          <textarea name="body"></textarea>
+        </div>
+        <button class="ui basic fluid teal animated fade button">
+          <div class="visible content">
+            <i class="send icon"></i>
+          </div>
+          <div class="hidden content">
+            Send
+          </div>
+        </button>
+        <div class="ui error message">
+        </div>
+        <div class="ui success message">
+          <div class="header">Message Sent ^^</div>
+          <p>Message on its way, you should hear from me soon</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
