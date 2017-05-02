@@ -1,0 +1,10 @@
+#header-logo{
+  min-height: 50px;
+  max-height: 2vw;
+}
+#page{
+  background: rgb(40,40,40);
+}
+.spacer{
+  padding-top: 20px;
+}
