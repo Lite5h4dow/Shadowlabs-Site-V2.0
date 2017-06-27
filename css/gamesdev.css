@@ -1,0 +1,26 @@
+#header-logo{
+  min-height: 50px;
+  max-height: 2vw;
+}
+#page{
+  background: rgb(40,40,40);
+}
+.spacer{
+  padding-top: 20px;
+}
+.slider{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+}
+.slider-nav{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.slider-nav.item{
+  padding: 5px;
+}
+#pageHeader{
+  padding-top: 15px;
+}

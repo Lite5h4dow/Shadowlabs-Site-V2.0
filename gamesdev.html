@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Shadowlabs | Web Development</title>
+  <title>Shadowlabs | Games Dev</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="css\webdev.css" rel="stylesheet" />
+  <link href="css\gamesdev.css" rel="stylesheet" />
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!--Semantic import-->
   <script src="assets/semantic/semantic.min.js"></script>
   <link href="assets/semantic/semantic.min.css" rel="stylesheet" />
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <!--Font-->
   <link href="https://fonts.googleapis.com/css?family=Exo+2|Ubuntu" rel="stylesheet">
   <!-- Javascript -->
-  <script src="js/gamesdev.js"></script>
   <script src="js/root.js"></script>
-  <script src="js/contact.js"></script>
-  <!--Recaptcha-->
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="js/gamesdev.js"></script>
+
 </head>
 <body>
-  <div class="ui sidebar vertical menu">
+  <div class="ui sidebar vertical borderless menu" id="mainMenu">
     <a class="item" href="home.html">Home</a>
-    <a class="item" href="404.html">Portfolio</a>
     <a class="active item" href="gamesdev.html">Games Development</a>
     <a class="item" href="webdev.html">Web Development</a>
     <a class="item" href="404.html">Graphic Design</a>
@@ -50,31 +53,250 @@
     </div>
   </div>
   <div class="pusher">
-    <!--Header-->
     <div class="ui sticky">
       <div class="ui basic inverted teal segment">
         <div class="ui centered grid">
           <div class="row">
             <div class="two wide column">
-              <div class="ui basic icon circular inverted grow button" id="sidebar-toggle" data-content="Sidebar" data-variation="inverted">
+              <div class="ui basic icon circular inverted button" id="sidebar-toggle" data-content="Sidebar" data-variation="inverted">
                 <i class="content icon"></i>
               </div>
             </div>
             <div class="twelve wide column">
-              <img id="header-logo" href="home.html" class="grow" src="images\Shadow_Labs_White-01.png" />
+              <img id="header-logo" src="images\Shadow_Labs_White-01.png" />
             </div>
             <div class="two wide column">
-              <div class="ui basic icon circular inverted grow button" id="contact-button" data-content="Contact Me" data-variation="inverted">
-                <i class="mail icon"></i>
+              <div class="ui basic icon circular inverted button" id="contact-button" data-content="Contact Me" data-variation="inverted">
+                <i class="talk outline icon"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Web Page-->
     <div id="page">
+      <h2 class="ui huge center aligned inverted icon header" id="pageHeader">
+        <i class="inverted circular orange game icon"></i>
+        Games Development
+        <div class="sub header">
+          Everyones version of fun
+        </div>
+      </h2>
+      <div class="slider">
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+      </div>
+      <div class="slider-nav">
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+        <div><img class="ui fluid image" src="http://via.placeholder.com/1920x550" /></div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui container">
+        <div class="ui inverted grey segment">
+          <div class="ui huge orange center aligned header">
+            Current Projects
+          </div>
+          <p>
+            When i have the time, or I'm doing work for uni, i get to work on
+            projects. My own projects i actually enjoy and get to push myself
+            with, wether its a test of my skill, an idea i wasnt to see to
+            fruition, or a project i am working on with friends this is where
+            you can be kept up to date with what im up to, and if you would like
+            to help keep a roof over my head you can support me on paetreon where
+            there are perks and rewards for your donation
+          </p>
+          <div class="ui items">
+            <div class="item">
+              <div class="ui small image">
+                <img src="http://via.placeholder.com/500x500" />
+              </div>
+              <div class="middle aligned content">
+                <div class="header">
+                  Disk Battle VR
+                </div>
+                <div class="description">
+                  <p>
+                    VR is great, a game in tron called the disk battle seemed
+                    like the perfect way to test my skill and ability learning a
+                    new system and strengthen my skills in UE4
+                  </p>
+                </div>
+                <div class="extra">
+                  <div class="ui right floated button">
+                    <i class="ui book icon"></i>
+                    Read more
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui small image">
+                <img src="http://via.placeholder.com/500x500" />
+              </div>
+              <div class="middle aligned content">
+                <div class="header">
+                  Kings Vessel (Natoken Entertainment)
+                </div>
+                <div class="description">
+                  Multi-platform Team based Moba set in a 6v6 arena.
+                </div>
+                <div class="extra">
+                  <div class="ui right floated button">
+                    <i class="ui book icon"></i>
+                    Read More
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="ui basic inverted equal width stackable centered grid segment">
+        <div class="column">
+          <div class="ui inverted header">
+            Stay Connected
+          </div>
+          <div class="ui icon buttons">
+            <div class="ui blue button">
+              <i class="facebook icon"></i>
+            </div>
+            <div class="ui teal button">
+              <i class="twitter icon"></i>
+            </div>
+            <div class="ui red button">
+              <i class="youtube icon"></i>
+            </div>
+            <div class="ui purple button">
+              <i class="instagram icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui inverted header">
+            Developer To the Core
+          </div>
+          <p>
+            Ive been making things for years, now I make things on a computer.
+            Religeously. Support me on Paetreon to keep up to date on all my
+            new projects.
+          </p>
+          <div class="ui fluid orange animated button">
+            <div class="visible content">
+              Paetreon
+            </div>
+            <div class="hidden content">
+              <i class="product hunt icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui inverted header">
+            Nav Panel
+          </div>
+          <div class="ui horizontal divided inverted list">
+            <a class="item" href="home.html">
+              <i class="home icon"></i>
+              <div class="content">
+                Home
+              </div>
+            </a>
+            <a class="item" href="404.html">
+              <i class="image icon"></i>
+              <div class="content">
+                Portfolio
+              </div>
+            </a>
+            <a class="item" href="404.html">
+              <i class="game icon"></i>
+              <div class="content">
+                Games Development
+              </div>
+            </a>
+            <a class="item" href="404.html">
+              <i class="html5 icon"></i>
+              <div class="content">
+                Website Development
+              </div>
+            </a>
+            <a class="item" href="404.html">
+              <i class="paint brush icon"></i>
+              <div class="content">
+                Graphic Design
+              </div>
+            </a>
+            <a class="item" href="404.html">
+              <i class="film icon"></i>
+              <div class="content">
+                Videography
+              </div>
+            </a>
+            <a class="item" href="404.html">
+              <i class="plus icon"></i>
+              <div class="content">
+                Game Mods
+              </div>
+            </a>
+            <a class="item" id="contact-footer">
+              <i class="address book outline icon"></i>
+              <div class="content">
+                Contact Me
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <!--Modals-->
+  <div class="ui modal" id="contact-modal">
+    <div class="header">
+      Contact Me!
+    </div>
+    <div class="content">
+      <form class="ui form">
+        <div class="field">
+          <label>Name</label>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="first-name" placeholder="First Name" />
+          </div>
+          <div class="field">
+            <input type="text" name="last-name" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="field">
+          <label>E-mail Address</label>
+          <input type="text" name="e-mail" placeholder="E-mail Address" />
+        </div>
+        <div class="field">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea></textarea>
+        </div>
+        <button class="ui fluid teal animated fade button">
+          <div class="visible content">
+            Submit
+          </div>
+          <div class="hidden content">
+            <i class="send icon"></i>
+          </div>
+        </button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
