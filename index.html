@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shadowlabs | Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="css\home.css" rel="stylesheet" />
+  <link href="css\hexagons.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!--Semantic import-->
+  <script src="assets/semantic/semantic.min.js"></script>
+  <link href="assets/semantic/semantic.min.css" rel="stylesheet" />
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2|Ubuntu" rel="stylesheet">
+  <!-- Javascript -->
+  <script src="js/root.js"></script>
+  <script src="js/contact.js"></script>
+  <!--Recaptcha-->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+  <div class="ui sidebar vertical menu">
+    <a class="active item" herf="home.html">Home</a>
+    <a class="item" href="404.html">Portfolio</a>
+    <a class="item" href="gamesdev.html">Games Development</a>
+    <a class="item" href="webdev.html">Web Development</a>
+    <a class="item" href="404.html">Graphic Design</a>
+    <a class="browse item" id="modsDD">Mods
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup" id="modDD+">
+      <div class="ui two column center aligned divided inverted grid">
+        <div class="column">
+          <h4 class="ui header">League of Legends</h4>
+          <div class="ui link list">
+            <a class="item">Custom Skins</a>
+            <a class="item">HD Remakes</a>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="ui header">Games</h4>
+          <div class="ui link list">
+            <a class="item">Fallout</a>
+            <a class="item">Skyrim</a>
+            <a class="item">Others</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pusher">
+    <div class="ui sticky">
+      <div class="ui basic inverted teal segment">
+        <div class="ui centered grid">
+          <div class="row">
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted grow button" id="sidebar-toggle" data-content="Sidebar" data-variation="inverted">
+                <i class="content icon"></i>
+              </div>
+            </div>
+            <div class="twelve wide column">
+              <img id="header-logo" href="home.html" class="grow" src="images\Shadow_Labs_White-01.png" />
+            </div>
+            <div class="two wide column">
+              <div class="ui basic icon circular inverted grow button" id="contact-button" data-content="Contact Me" data-variation="inverted">
+                <i class="mail icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page">
+      <div class="ui container">
+        <div class="ui basic segment">
+          <center>
+            <h1 class="slogan grow">Beauty in Efficiency</h1>
+          </center>
+        </div>
+        <div class="padder">
+          <ul id="hexGrid">
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#gamesDev">
+                  <img src="images\hexagons\Games Dev.png" />
+                  <h1>Games Development</h1>
+                </a>
+              </div>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#webDev">
+                  <img src="images\hexagons\Web Dev.png" />
+                  <h1>Web Development</h1>
+                </a>
+              </div>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#graphicDesign">
+                  <img src="images\hexagons\Design.png" />
+                  <h1>Graphic Design</h1>
+                </a>
+              </div>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#videography">
+                  <img src="images\hexagons\Clapboard.png" />
+                  <h1>Videography</h1>
+                </a>
+              </div>
+            </li>
+            <li class="hex grow">
+              <div class="hexIn">
+                <a class="hexLink" href="#modding">
+                  <img src="images\hexagons\Modding.png" />
+                  <h1>Modding</h1>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--MainBody-->
+      <div class="ui divider"></div>
+      <div class="ui stackable grid" id="gamesDev">
+        <div class="eight wide column">
+          <div class="ui fluid image">
+            <img src="http://via.placeholder.com/1920x600" />
+          </div>
+        </div>
+        <div class="eight wide column">
+          <div class="ui inverted basic segment">
+            <center>
+              <h1 class="ui yellow header">
+                <i class="circular game icon"></i>
+                <div class="content">
+                  Games Development
+                </div>
+              </h1>
+            </center>
+            <p class="paragraph">
+              Ive been studying games develeopment consistently for 3 years. My
+              main areas of focus are Modeling, Texturing, and Mechanics
+              Development (Programming / Blueprints). ive been using UE4
+              primerily as my main engine, while experimenting with other engines
+              such as Unity and Lumberyard if I have a project idea or experiment on my mind.
+            </p>
+            <div class="ui fade animated orange fluid button" href="gamesdev.html">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui computer reversed stackable grid" id="webDev">
+        <div class="eight wide column">
+          <div class="ui fluid image">
+            <img src="http://via.placeholder.com/1920x600" />
+          </div>
+        </div>
+        <div class="eight wide column">
+          <div class="ui inverted basic segment">
+            <center>
+              <h1 class="ui yellow header">
+                <i class="circular html5 icon"></i>
+                <div class="content">
+                  Website Development
+                </div>
+              </h1>
+            </center>
+            <p="paragraph">
+              Web Development is something I have been doing for a while now.
+              Making websites from scratch is a creative process I thoroughly enjoy,
+              a perfect ascociation between programming and graphical design and
+              animation all rolled into one easy to access package for the world
+              to see. To me Its the form of art that goes unapreciated, and thats my favorite kind.
+            </p>
+            <div class="ui fade animated orange fluid button" href="webdev.html">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui stackable grid" id="graphicDesign">
+        <div class="eight wide column">
+          <div class="ui fluid image">
+            <img src="http://via.placeholder.com/1920x600" />
+          </div>
+        </div>
+        <div class="eight wide column">
+          <div class="ui inverted basic segment">
+            <center>
+              <h1 class="ui yellow header">
+                <i class="circular paint brush icon"></i>
+                <div class="content">
+                  Graphic Design
+                </div>
+              </h1>
+            </center>
+            <p="paragraph">
+              Graphics Design is a small thing that every one over looks until they
+              need it, its the face of a company, an individuals alias or stamp,
+              some dont appreciate the significance that a logo can have. In a World
+              full of logos and brands, why not make yours unique and stand out
+              from among the crowd.
+            </p>
+            <div class="ui fade animated orange fluid button" href="404.html">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui computer reversed stackable grid" id="videography">
+        <div class="eight wide column">
+          <div class="ui fluid image">
+            <img src="http://via.placeholder.com/1920x600" />
+          </div>
+        </div>
+        <div class="eight wide column">
+          <div class="ui inverted basic segment">
+            <center>
+              <h1 class="ui yellow header">
+                <i class="circular film icon"></i>
+                <div class="content">
+                  Videography / VFX
+                </div>
+              </h1>
+            </center>
+            <p class="paragraph">
+              VFX is Games Development without the game your still telling a
+              story, getting your point across in a way that is visually appealing
+              to the veiwer, except instead of having a virtual environment your
+              working with the real world, capturing it and perfecting it.
+            </p>
+            <div class="ui fade animated orange fluid button" href="404.html">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui stackable grid" id="modding">
+        <div class="eight wide column">
+          <div class="ui fluid image">
+            <img src="http://via.placeholder.com/1920x600" />
+          </div>
+        </div>
+        <div class="eight wide column">
+          <div class="ui inverted basic segment">
+            <center>
+              <h1 class="ui yellow header">
+                <i class="circular plus icon"></i>
+                <div class="content">
+                  Game Mods
+                </div>
+              </h1>
+            </center>
+            <p class="paragraph">
+              Some games are great, some are missing that little extra something.
+              (Bethesda I'm looking at you) so this is where I paractice my skills
+              and add to the games I enjoy playing, for now, League of Legends skins
+              will be my main export, but the better I guet the more I'll mod
+            </p>
+            <div class="ui fade animated orange fluid button" html="404.html">
+              <div class="visible content">
+                Learn More
+              </div>
+              <div class="hidden content">
+                <i class="circle double right angle icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <!--Footer-->
+      <div class="footer">
+        <div class="ui basic inverted equal width stackable centered grid segment">
+          <div class="column">
+            <div class="ui inverted header">
+              Stay Connected
+            </div>
+            <div class="ui icon buttons">
+              <div class="ui blue button">
+                <i class="facebook icon"></i>
+              </div>
+              <div class="ui teal button">
+                <i class="twitter icon"></i>
+              </div>
+              <div class="ui red button">
+                <i class="youtube icon"></i>
+              </div>
+              <div class="ui purple button">
+                <i class="instagram icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui inverted header">
+              Developer To the Core
+            </div>
+            <p>
+              Ive been making things for years, now I make things on a computer.
+              Religeously. Support me on Paetreon to keep up to date on all my
+              new projects.
+            </p>
+            <div class="ui fluid orange animated button">
+              <div class="visible content">
+                Paetreon
+              </div>
+              <div class="hidden content">
+                <i class="product hunt icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui inverted header">
+              Nav Panel
+            </div>
+            <div class="ui horizontal divided inverted list">
+              <a class="item" href="home.html">
+                <i class="home icon"></i>
+                <div class="content">
+                  Home
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="image icon"></i>
+                <div class="content">
+                  Portfolio
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="game icon"></i>
+                <div class="content">
+                  Games Development
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="html5 icon"></i>
+                <div class="content">
+                  Website Development
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="paint brush icon"></i>
+                <div class="content">
+                  Graphic Design
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="film icon"></i>
+                <div class="content">
+                  Videography
+                </div>
+              </a>
+              <a class="item" href="404.html">
+                <i class="plus icon"></i>
+                <div class="content">
+                  Game Mods
+                </div>
+              </a>
+              <a class="item" id="contact-footer">
+                <i class="address book outline icon"></i>
+                <div class="content">
+                  Contact Me
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui modal" id="contact-modal">
+    <i class="teal close icon"></i>
+    <div class="header">
+      Contact Me
+    </div>
+    <div class="content">
+      <form class="ui form" action="php/contact_form.php" method="post">
+        <div class="required field">
+          <label>Name</label>
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="firstName" placeholder="First Name" />
+            </div>
+            <div class="field">
+              <input type="text" name="lastName" placeholder="Last Name" />
+            </div>
+          </div>
+        </div>
+        <div class="required field">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="E-Mail Address"/>
+        </div>
+        <div class="required field">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+        <div class="required field">
+          <label>Message</label>
+          <textarea name="body"></textarea>
+        </div>
+        <button class="ui basic fluid teal animated fade button">
+          <div class="visible content">
+            <i class="send icon"></i>
+          </div>
+          <div class="hidden content">
+            Send
+          </div>
+        </button>
+        <div class="ui error message">
+        </div>
+        <div class="ui success message">
+          <div class="header">Message Sent ^^</div>
+          <p>Message on its way, you should hear from me soon</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
